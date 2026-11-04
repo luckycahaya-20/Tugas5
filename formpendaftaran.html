@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pendaftaran siswa</h2>
+
+    <from action="proses.php"method="post" enctype="mulitipart/from-data">
+        <fieldset>
+            <legend>Formulir pendaftaran</legend>
+
+            <label for="Nama">Nama Lengkap:</label>
+            <input type="text"id="nama" name="nama" placeholder="Masukan nama lengkap" required><br><br>
+
+            <label for="NIS">NIS</label>
+            <input type="text"id="NIS" name="NIS" placeholder="masukan NIS"required><br><br>
+       
+            <label for="Jenis Kelamin">Jenis Kelamin:</label>
+            <input type="radio"name="laki laki" value="L">laki laki
+            <input type="radio"name="perempuan"value="P">perempua<br><br>
+
+            <label for="Tanggal Lahir">Tanggal Lahir:</label>
+            <input type="date"name="nn/dd/yyy"><br><br>
+
+            <label for="Jurusan">jurusan:</label>
+            <select id="jurusan"name="jutusan"required>
+                <option value="---pilih jurusan---"></option>
+                <option value="RPL">Rekayasa peranglat lunak(RPL)</option>
+                <option value="PPLG">Prngembangan perangkat lunak dan gim(PPLG)</option>
+                <option value="TKJ">Teknik komputer dan jaringan(TKJ)</option>
+            </select><br><br>
+
+            <label for="alamat">Alamat Lengkap</label><br>
+            <textarea id="alamat"name="alamat"rows="4"cools="40"placeholder="tuliskan alamat rumah lengap disini..."required></textarea><br><br>
+           
+             <label for="Foto">Foto:</label>
+             <button type="submit">Choose file</button>
+             <label for="No file chosen">No file chosen</label>
+
+             <label type="chekbox" name="saya mempunyai data yang saya massukan"></label>
+             
+             <br><br>
+             
+             <button type="submit">Daftar</button>
+             <button type="submit">reset</button>
+
+            <label></label>
+        </fieldset>
+    
+</body>
+                  </html>
